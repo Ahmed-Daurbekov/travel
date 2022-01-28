@@ -227,7 +227,7 @@ input.forEach(item => {
 
 function getTimes() {
 
-    let discountEnd = new Date('May 25 2022, 00:00:00')
+    let discountEnd = new Date('May 2 2022, 00:00:00')
     let dataNow = new Date();
     let dif = discountEnd - dataNow;
 
