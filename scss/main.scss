@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+button {
+  transition: 0.2s;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+body {
+  font-family: 'PT Sans Caption', sans-serif;
+
+  &.hide {
+    overflow: hidden;
+  }
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+@import './ScssBlocks/header';
+@import './ScssBlocks/main';
+@import './ScssBlocks/footer';
+@import './ScssBlocks/modal';

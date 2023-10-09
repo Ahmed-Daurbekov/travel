@@ -1,0 +1,251 @@
+.main {
+  .information {
+    background: #F8FBFA;
+    height: 532px;
+
+    @media (max-width: 1560px) {
+      height: unset !important;
+    }
+    
+    @media (max-width: 870px) {
+      padding-bottom: 15px;
+    }
+
+    @media (max-width: 767px) {
+      margin-top: 13px;
+    }
+    
+    .container {
+      display: flex;
+      height: 100%;
+
+      @media (max-width: 870px) {
+        flex-wrap: wrap;
+      }
+    }
+
+    &_text-block {
+      margin-right: 5px;
+      align-self: center;
+      
+      @media (max-width: 870px) {
+        order: 1;
+      }
+      
+      .information_title {
+        max-width: 375px;
+        color: #364844;
+        font-size: 36px;
+        font-weight: 700;
+
+        @media (max-width: 768px) {
+          font-size: 31px;
+          max-width: 295px;
+        }
+
+        @media (max-width: 425px) {
+          font-size: 26px;
+          max-width: 260px;
+        }
+        
+      }
+
+      .information_description {
+        max-width: 367px;
+        color: #364844;
+        font-size: 16px;
+        line-height: 150%; 
+
+        @media (max-width: 768px) {
+          font-size: 15px;
+          max-width: 270px;
+        }
+
+        @media (max-width: 425px) {
+          font-size: 14px;
+          max-width: 340px;
+        }
+        
+      }
+    }
+    
+    &_image-block {
+      @media (max-width: 870px) {
+        order: 0;
+      }
+      img {
+        position: absolute;
+        right: 0;
+
+        @media (max-width: 1560px) {
+          position: static;
+        }
+
+        @media (max-width: 1200px) {
+          width: 725px;
+        }
+
+        @media (max-width: 870px) {
+          width: 100%;
+        }
+        
+      }
+    }
+  }
+
+  .slider-block {
+    padding: 100px 0;
+    
+    .slider {
+      position: relative;
+      overflow: hidden;
+      width: 100%;
+    }
+    
+    .slides {
+      display: flex;
+      transition: transform 0.5s ease;
+    }
+    
+    .slide {
+      display: flex;
+      justify-content: space-between;
+      flex-shrink: 0;
+      width: 100%;
+      max-height: 440px;
+      
+      @media (max-width: 767px) {
+        flex-direction: column;
+      }
+      
+      &-text {
+        @media (max-width: 767px) {
+          order: 1;
+        }
+        
+        h2 {
+          color: #364844;
+          font-size: 38px;
+          font-weight: 700;
+          text-transform: uppercase;
+        }
+
+        &_desc {
+          margin-top: 10px;
+          color: #364844;
+          font-size: 22px;
+          font-weight: 700;
+        }
+
+        &_list {
+          display: flex;
+          flex-direction: column;
+          gap: 15px;
+          
+          li {
+            color: #364844;
+            font-size: 16px;
+            padding-left: 17px;
+            position: relative;
+
+            &::after {
+              content: '';
+              position: absolute;
+              left: 0;
+              top: 5px;
+              width: 7px;
+              height: 9px;
+              background: url('../../assets/img/icons/Ellipse.svg') no-repeat;
+            }
+          }
+        }
+
+        .price {
+          color: #364844;
+          font-size: 20px;
+          margin-top: 33px;
+
+          .old-price {
+            color: #868686;
+            font-size: 16px;
+            line-height: 24px;
+            text-decoration: line-through;
+          }
+
+        }
+        
+        .option-btns {
+          display: flex;
+          gap: 14px;
+          margin-top: 26px;
+          
+          .btn {
+            text-align: center;
+            font-size: 14px;
+            line-height: 21px;
+            padding: 11px 58px;
+            border-radius: 50px;
+          }
+          
+          .appointment {
+            color: #FFF;
+            border: none;
+            background: #0DBC91;
+
+            &:hover, &:active {
+              background: #00D29F;
+            }
+          }
+
+          .more {
+            color: #0DBC91;
+            border: 1px solid #0DBC91;
+            background: transparent;
+
+            &:hover, &:active {
+              background: #0DBC91;
+              color: #fff;
+            }
+          }
+        }
+      }
+
+      &-img {
+        max-height: 440px;
+
+        img {
+          height: 100%;
+        }
+      }
+    }
+    
+    img {
+      width: 100%;
+      height: auto;
+    }
+
+    .options-btns {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 34px;
+      gap: 36px;
+      position: relative;
+      z-index: 50;
+
+      .slide-number {
+        color: #C0C0C0;
+        font-size: 18px;
+
+        &_current {
+          color: #364844;
+        }
+      }
+      
+      .prev, .next {
+        cursor: pointer;
+      }
+    }
+    
+  }
+}

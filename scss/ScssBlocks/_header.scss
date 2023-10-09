@@ -1,0 +1,201 @@
+.header {
+  margin-top: 12px;
+  
+  &_logo-block {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .burger-menu {
+      display: none;
+      
+      @media (max-width: 767px) {
+        display: block;
+      }
+
+      &.active {
+        .burger-menu_line {
+          transform: rotate(-45deg);
+          top: 2px;
+          
+          &::before {
+            transform: rotate(90deg);
+            top: 2px;
+          }
+          &::after {
+            opacity: 0;
+          }
+        }
+      }
+      
+      &_line {
+        position: relative;
+        width: 37px;
+        height: 4px;
+        margin-top: 2px;
+        background: #1FA181;
+        transition: 0.5s;
+
+        &::before {
+          content: '';
+          position: absolute;
+          width: 37px;
+          height: 4px;
+          background: #1FA181;
+          top: 20px;
+        }
+        
+        &::after {
+          content: '';
+          position: absolute;
+          width: 37px;
+          height: 4px;
+          background: #1FA181;
+          top: 10px;
+        }
+      }
+    }
+    
+    .logo {
+      display: flex;
+      gap: 20.55px;
+
+      .address {
+        width: 100%;
+        display: flex;
+        gap: 6.65px;
+
+        @media (max-width: 767px) {
+          display: none;
+        }
+        
+        .city {
+          color: #364844;
+          font-size: 14px;
+          font-weight: 400;
+          line-height: 21px;
+        }
+
+        .street {
+          color: #868686;
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 21px;
+        }
+      }
+    }
+
+    .feedback {
+      display: flex;
+      gap: 35px;
+
+      @media (max-width: 767px) {
+        flex-direction: column;
+        gap: 0;
+      }
+      
+      .city {
+        color: #364844;
+        text-align: right;
+        font-size: 13px;
+        display: none;
+
+        @media (max-width: 767px) {
+          display: block;
+        }
+      }
+
+      .whatsapp {
+        display: flex;
+        align-items: center;
+        color: #364844;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+
+        img {
+          margin-right: 9px;
+
+          @media (max-width: 767px) {
+            display: none;
+          }
+        }
+      }
+
+      .make-appointment {
+        border-radius: 50px;
+        background: #0DBC91;
+        border: none;
+        padding: 11px 23px;
+        color: #FFF;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 21px;
+
+        @media (max-width: 767px) {
+          display: none;
+        }
+      }
+    }
+  }
+
+  &_nav-block {
+    background: #1FA181;
+
+    @media (max-width: 767px) {
+      left: -120%;
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      transition: 0.5s;
+      background: rgba(69, 146, 127, 0.90);    
+      backdrop-filter: blur(2px);
+      z-index: 100;
+
+      &.active {
+        left: 0;
+      }
+    }
+    
+    ul {
+      display: flex;
+      gap: 30px;
+      margin-top: 12px;
+      padding-top: 10px;
+      padding-bottom: 9px;
+
+      @media (max-width: 767px) {
+        flex-direction: column;
+        margin-top: 48px;
+        gap: 10px;
+      }
+      
+      li {
+        a {
+          color: #FFF;
+          font-size: 16px;
+          font-style: normal;
+          line-height: 24px;
+        }
+      }
+    }
+
+    .nav_make-appointment {
+      color: #1FA181;
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 21px;
+      border-radius: 50px;
+      background: #F6F6F6;
+      padding: 11px 24px;
+      border: none;
+      margin-top: 30px;
+      display: none;
+
+      @media (max-width: 767px) {
+        display: block;
+      }
+    }
+  }
+}

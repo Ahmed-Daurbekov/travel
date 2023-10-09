@@ -1,0 +1,67 @@
+.modal {
+  display: none;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  background: #00000097;
+  z-index: 500;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  &.active {
+    display: flex;
+  }
+
+  &-body {
+    padding: 0 10px;
+    max-width: 400px;
+
+    .close {
+      font-size: 50px;
+      cursor: pointer;
+      color: #fff;
+      position: absolute;
+      right: 20px;
+      top: 20px;
+
+      @media (max-width: 425px) {
+        right: 10px;
+      }
+    }
+
+    form {
+      input {
+        width: 100%;
+        font-size: 20px;
+        padding: 10px 0;
+        outline: none;
+        border-radius: 10px;
+
+        &[type=text] {
+          padding-left: 10px;
+        }
+
+        &[type=submit] {
+          cursor: pointer;
+
+          @media (max-width: 425px) {
+            font-size: 16px;
+          }
+        }
+      }
+
+      textarea {
+        outline: none;
+        margin-top: 10px;
+        margin-bottom: 5px;
+        font-size: 20px;
+        padding: 5px;
+        width: 100%;
+        resize: vertical;
+        max-height: 200px;
+      }
+    }
+  }
+}

@@ -1,234 +1,248 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
-    <title>Travel</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/main.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@400;700&display=swap" rel="stylesheet">
+  <title>МКдДиВ</title>
 </head>
 <body>
-    
-    <header class="header">
-        <div class="container">
-            <nav class="header__lists">
-                <a class="header__list" href="#intelligence">О нас</a>
-                <a class="header__list" href="#foto">Фото</a>
-                <a class="header__list" href="#cost">Стоимость</a>
-                <a class="header__list" href="#contact-us">Контакты</a>
+  
+  <header class="header">
+    <div class="container">
+      
+      <div class="header_logo-block">
 
-                <div class="burger hide">
-                    <div class="burger-menu">
-                        <div class="burger-menu__line"></div>
-                    </div>
-                </div>
-            </nav>
+        <div class="logo">
+          <div class="burger-menu">
+            <div class="burger-menu_line"></div>
+          </div>
 
-            <div class="burger-overflow hide">
-                <div class="burger-menu__lists">
-                    <div class="burger-menu__lists-bg">
-                        <a class="burger-menu__list" href="#intelligence">О нас</a>
-                        <a class="burger-menu__list" href="#foto">Фото</a>
-                        <a class="burger-menu__list" href="#cost">Стоимость</a>
-                        <a class="burger-menu__list" href="#contact-us">Контакты</a>
-                    </div>
-                </div>
+          <img src="./assets/img/icons/LOGO.svg" alt="logo">
+          <div class="address">
+            <div class="location_img">
+              <img src="./assets/img/icons/location.svg" alt="location">
             </div>
-        </div>
-    </header>
-
-    <section class="sect-1">
-        <div class="container">
-            <div class="sect-1__block">
-                <div class="sect-1__block-link">Travel.org</div>
-                <div class="sect-1__block-title">йога-туры в индию</div>
-                <div class="sect-1__block-text">океан / йога / путешествия / аюрведа</div>
+            <div class="location_text">
+              <p class="city">Ростов-на-Дону</p>
+              <p class="street">ул. Ленина, 2Б</p>
             </div>
+          </div>
         </div>
+
+        <div class="feedback">
+          <a href="https://wa.me/+78630000000" class="whatsapp">
+            <img src="./assets/img/icons/whatsapp.svg" alt="whatsapp">
+            +7(863) 000 00 00
+          </a>
+          <div class="city">Ростов-на-Дону</div>
+          <button class="make-appointment">Записаться на прием</button>
+        </div>
+      </div>
+    </div>
+    <nav class="header_nav-block">
+      <div class="container">
+        <ul>
+          <li>
+            <a href="/">О клинике</a>
+          </li>
+          <li>
+            <a href="/">Услуги</a>
+          </li>
+          <li>
+            <a href="/">Специалисты</a>
+          </li>
+          <li>
+            <a href="/">Цены</a>
+          </li>
+          <li>
+            <a href="/">Контакты</a>
+          </li>
+        </ul>
+        <button class="nav_make-appointment">Записаться на прием</button>
+      </div>
+    </nav>
+  </header>
+
+  <main class="main">
+    <section class="information">
+      <div class="container">
+        <div class="information_text-block">
+          <p class="information_title">Многопрофильная клиника для детей и взрослых</p>
+          <p class="information_description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+        </div>
+        <div class="information_image-block">
+          <img src="./assets/img/information_image.png" class="information_image" alt="information_image">
+        </div>
+      </div>
     </section>
 
-    <div class="content"> 
-        <section class="sect-2" id="intelligence">
-            <div class="container">
-                <div class="intelligence">
-                    <div class="intelligence__tabs">
-                        <div class="intelligence__tab intelligence__tab-active" data-tabnumber="5">Все</div>
-                        <div class="intelligence__tab" data-tabnumber="1">Лечение</div>
-                        <div class="intelligence__tab" data-tabnumber="2">Отдых</div>
-                        <div class="intelligence__tab" data-tabnumber="3">Природа</div>
-                        <div class="intelligence__tab" data-tabnumber="4">Йога</div>
-                    </div>
-
-                    <div class="intelligence__tabcontent-sh" data-tabcontent="1">
-                        <div class="intelligence__tabcontent">
-                            <div class="intelligence-tabcontent__text-block">
-                                <div class="intelligence-tabcontent__title">Здоровый позвоночник</div>
-                                <div class="intelligence-tabcontent__text">Йога, массажи и плавание в море - помогут уставшей спине! Индийские йоги считали, что здоровье человека можно определить по тому, насколько здоров и гибок у него позвоночник.<br>Интересно, что бы древние йоги сказали, глядя на современного человека, который уже со школьного возраста мучается болями в спине, работает подолгу в неудобных сидячих позах и не умеет расслабляться, имеет искривление, которое в итоге приведет к болезням других органов? Йоги сказали бы – займись собой и срочно!</div>
-                                <div class="intelligence-tabcontent__btn">Узнать подробнее</div>
-                            </div>
-                            <div class="intelligence-tabcontent__img-block">
-                                <img src="img/sunrise.jpg" alt="">
-                            </div>
-                        </div>                        
-                    </div>
-
-                    <div class="intelligence__tabcontent-sh" data-tabcontent="2">
-                        <div class="intelligence__tabcontent">
-                            <div class="intelligence-tabcontent__text-block">
-                                <div class="intelligence-tabcontent__title">Антистресс</div>
-                                <div class="intelligence-tabcontent__text">Аюрведа и йога утверждают, что главным источником здоровья нашего организма является здоровый ум. Программа «Антистресс» сначала убирает последствия стресса на физическом уровне, потом помогает избавиться от негативных и навязчивых мыслей, затем повышает общий уровень энергии.<br>Вы наконец вспомните ощущение "свободной головы", ощутите прилив физических сил и вспомните, что такое счастье.</div>
-                                <div class="intelligence-tabcontent__btn">Узнать подробнее</div>
-                            </div>
-                            <div class="intelligence-tabcontent__img-block">
-                                <img src="img/sunset.jpg" alt="">
-                            </div>
-                        </div>                        
-                    </div>
-
-                    <div class="intelligence__tabcontent-sh" data-tabcontent="3">
-                        <div class="intelligence__tabcontent">
-                            <div class="intelligence-tabcontent__text-block">
-                                <div class="intelligence-tabcontent__title">Восстановление</div>
-                                <div class="intelligence-tabcontent__text">Стрессы, жизнь в условиях города, плохая экология, загрязненные продукты и вода, напряженный ритм жизни - все это день ото дня отбирает у нас молодость и хорошее здоровье.<br>Одним кремом для лица не решить проблему омоложения организма, когда тебе за 40. Согласны?</div>
-                                <div class="intelligence-tabcontent__btn">Узнать подробнее</div>
-                            </div>
-                            <div class="intelligence-tabcontent__img-block">
-                                <img src="img/sunrise.jpg" alt="">
-                            </div>
-                        </div>                        
-                    </div>
-
-                    <div class="intelligence__tabcontent-sh" data-tabcontent="4">
-                        <div class="intelligence__tabcontent">
-                            <div class="intelligence-tabcontent__text-block">
-                                <div class="intelligence-tabcontent__title">Йога и аюрведа</div>
-                                <div class="intelligence-tabcontent__text">Несколько лет назад мы разработали специальные программы по йоге и аюрведе - и мы поняли, что они отлично работают - на опыте 530 наших туристов! В каждой из этих программ есть одна цель, на достижение которой будут направлены и асаны, и дыхательные практики, и медитации, и аюрведические процедуры, будут читаться лекции по этой теме.<br>Йога и аюрведа - два сильных война, которые сообща будут бороться с проблемами и болезнями.</div>
-                                <div class="intelligence-tabcontent__btn">Узнать подробнее</div>
-                            </div>
-                            <div class="intelligence-tabcontent__img-block">
-                                <img src="img/yoga.jpg" alt="">
-                            </div>
-                        </div>                        
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="sect-3">
-            <div class="container">
-                <div class="sect-3__title">Успей забронировать место со скидкой</div>
-                <div class="stock">
-                    <div class="stock__title">До конца акции осталось</div>
-                    <div class="stock__timer">
-                        <span id="hours">00</span>
-                        <span>:</span>
-                        <span id="minutes">00</span>
-                        <span>:</span>
-                        <span id="seconds">00</span>
-                    </div>
-                    <div class="stock__btn">Узнать больше</div>
-                </div>
-            </div>
-        </section>
-
-        <section class="sect-4" id="foto">
-            <div class="container">
-                    <div class="slider__title">Фото с наших поездок</div>
-                <div class="slider">
-                    <div class="prev-next">
-                        <div class="prev arrowHide">
-                            <img src="img/icons/left-arrow.svg" alt="left">
-                        </div>
-                        <div class="next">
-                            <img src="img/icons/right-arrow.svg" alt="right">
-                        </div>
-                    </div>
-                    <div class="slider__img show fade" data-img="1">
-                        <img src="img/slider_1.jpg" alt="slide-1">
-                    </div>
-                    <div class="slider__img hide" data-img="2">
-                        <img src="img/slider_2.jpg" alt="slide-1">
-                    </div>
-                    <div class="slider__img hide" data-img="3">
-                        <img src="img/slider_3.jpg" alt="slide-1">
-                    </div>
-                    <div class="slider__img hide" data-img="4">
-                        <img src="img/slider_4.jpg" alt="slide-1">
-                    </div>
-                </div>
-                <div class="slider-dots">
-                    <div class="dot dot-active" data-dot="1"></div>
-                    <div class="dot" data-dot="2"></div>
-                    <div class="dot" data-dot="3"></div>
-                    <div class="dot" data-dot="4"></div>
-                </div>
-            </div>
-        </section>
-
-        <section class="sect-5" id="cost">
-            <div class="container">
-                <div class="sect-5__title">Рассчитайте стоимость вашего отдыха</div>
-                <div class="sect-5__block">
-                    <div class="people-number">Количество людей</div>
-                    <input class="people" type="text" value="1">
-                </div>
-                <div class="sect-5__block">
-                    <div class="day-time">На сколько дней</div>
-                    <input class="time" type="text" value="1">
-                </div>
-                <div class="sect-5__block">
-                <div class="select-base">Выберете базу</div>
-                <select name="hotel" class="select-hotel">
-                    <option value="1" selected>Индия, Мумбай</option>
-                    <option value="1.5">Индия, Керала</option>
-                    <option value="2">Индия, Варанаси</option>
-                </select>
-                </div>
+    <section class="slider-block">
+      <div class="container">
+        <div class="slider">
+          <div class="slides">
+            <div class="slide">
+              <div class="slide-text">
+                <h2>Check-UP</h2>
+                <p class="slide-text_desc">для мужчин</p>
+                <ul class="slide-text_list">
+                  <li>Гормональный скрининг</li>
+                  <li>Тестостерон</li>
+                  <li>Свободный тестостерон</li>
+                  <li>Глобулин, связывающий половые гормоны</li>
+                </ul>
                 <div class="price">
-                    <div class="price__text">Общая сумма</div>
-                    <span class="price__value">15000</span>
+                  Всего <span class="new-price">2800₽</span> <span class="old-price">3500₽</span> 
                 </div>
-                
+                <div class="option-btns">
+                  <button class="btn appointment">Записаться</button>
+                  <button class="btn more">Подробнее</button>
+                </div>
+              </div>
+              <div class="slide-img">
+                <img src="./assets/img/doctor-working-table 1.png" alt="Slide 1">
+              </div>
             </div>
-        </section>
 
-        <section class="sect-6" id="contact-us">
-            <div class="container">
-                <div class="contact">
-                    <div class="contact-img__block">
-                        <img src="img/letter.png" alt="img">
-                    </div>
-                    <div class="contact-text__block">
-                        <div class="contact-text__title">Мы с вами свяжемся</div>
-                        <form class="contact__form">
-                            <div class="enter-mail">
-                                <label for="mail">Ваша почта</label>
-                                <input id="mail" class="input e-mail" type="text">
-                            </div>
-                            <div class="enter-phone">
-                                <label for="phone">Ваш телефон</label>
-                                <input id="phone" class="input phone-number" type="text">
-                            </div>
-                            <input class="btn" type="submit" value="Отправить">
-                        </form>
-                    </div>
+            <div class="slide">
+              <div class="slide-text">
+                <h2>Check-UP</h2>
+                <p class="slide-text_desc">для мужчин</p>
+                <ul class="slide-text_list">
+                  <li>Гормональный скрининг</li>
+                  <li>Тестостерон</li>
+                  <li>Свободный тестостерон</li>
+                  <li>Глобулин, связывающий половые гормоны</li>
+                </ul>
+                <div class="price">
+                  Всего <span class="new-price">2800₽</span> <span class="old-price">3500₽</span> 
                 </div>
+                <div class="option-btns">
+                  <button class="btn appointment">Записаться</button>
+                  <button class="btn more">Подробнее</button>
+                </div>
+              </div>
+              <div class="slide-img">
+                <img src="./assets/img/doctor-working-table 1.png" alt="Slide 1">
+              </div>
             </div>
-        </section>
 
-        <footer class="footer">
-            <div class="container">
-                <div class="social-network">
-                    <a href="https://twitter.com/?lang=ru"><img src="img/logo/twitter-logo-silhouette.svg" alt="networks"></a>
-                    <a href="https://www.facebook.com/"><img src="img/logo/facebook-logo.svg" alt="networks"></a>
-                    <a href="https://www.instagram.com/?hl=ru"><img src="img/logo/instagram-social-network-logo-of-photo-camera.svg" alt="networks"></a>
+            <div class="slide">
+              <div class="slide-text">
+                <h2>Check-UP</h2>
+                <p class="slide-text_desc">для мужчин</p>
+                <ul class="slide-text_list">
+                  <li>Гормональный скрининг</li>
+                  <li>Тестостерон</li>
+                  <li>Свободный тестостерон</li>
+                  <li>Глобулин, связывающий половые гормоны</li>
+                </ul>
+                <div class="price">
+                  Всего <span class="new-price">2800₽</span> <span class="old-price">3500₽</span> 
                 </div>
+                <div class="option-btns">
+                  <button class="btn appointment">Записаться</button>
+                  <button class="btn more">Подробнее</button>
+                </div>
+              </div>
+              <div class="slide-img">
+                <img src="./assets/img/doctor-working-table 1.png" alt="Slide 1">
+              </div>
             </div>
-        </footer>
+            
+            <div class="slide">
+              <div class="slide-text">
+                <h2>Check-UP</h2>
+                <p class="slide-text_desc">для мужчин</p>
+                <ul class="slide-text_list">
+                  <li>Гормональный скрининг</li>
+                  <li>Тестостерон</li>
+                  <li>Свободный тестостерон</li>
+                  <li>Глобулин, связывающий половые гормоны</li>
+                </ul>
+                <div class="price">
+                  Всего <span class="new-price">2800₽</span> <span class="old-price">3500₽</span> 
+                </div>
+                <div class="option-btns">
+                  <button class="btn appointment">Записаться</button>
+                  <button class="btn more">Подробнее</button>
+                </div>
+              </div>
+              <div class="slide-img">
+                <img src="./assets/img/doctor-working-table 1.png" alt="Slide 1">
+              </div>
+            </div>
+            
+          </div>
+
+          <div class="options-btns">
+            <svg class="prev" width="34" height="18" viewBox="0 0 34 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M32.6718 7.67186H4.54494L9.20427 3.03512C9.72416 2.51768 9.72616 1.67678 9.20872 1.15689C8.69128 0.636925 7.85031 0.635 7.33042 1.15237L0.390699 8.05861C0.390234 8.05901 0.389902 8.05947 0.389503 8.05987C-0.129063 8.57731 -0.130723 9.42093 0.38937 9.94009C0.389835 9.94049 0.390167 9.94095 0.390566 9.94135L7.33028 16.8476C7.85011 17.3649 8.69108 17.3631 9.20859 16.8431C9.72602 16.3232 9.72403 15.4823 9.20414 14.9648L4.54494 10.3281H32.6718C33.4054 10.3281 34 9.7335 34 8.99998C34 8.26646 33.4054 7.67186 32.6718 7.67186Z" fill="#E1E1E1"/>
+            </svg>              
+            
+            <div class="slide-number">
+              <span class="slide-number_current">1</span>
+              /
+              <span class="slide-number_all">0</span>
+            </div>
+            
+            <svg class="next" width="34" height="18" viewBox="0 0 34 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M1.32816 7.67186H29.4551L24.7957 3.03512C24.2758 2.51768 24.2738 1.67678 24.7913 1.15689C25.3087 0.636925 26.1497 0.635 26.6696 1.15237L33.6093 8.05861C33.6098 8.05901 33.6101 8.05947 33.6105 8.05987C34.1291 8.57731 34.1307 9.42093 33.6106 9.94009C33.6102 9.94049 33.6098 9.94095 33.6094 9.94135L26.6697 16.8476C26.1499 17.3649 25.3089 17.3631 24.7914 16.8431C24.274 16.3232 24.276 15.4823 24.7959 14.9648L29.4551 10.3281H1.32816C0.594638 10.3281 3.67165e-05 9.7335 3.67165e-05 8.99998C3.67165e-05 8.26646 0.594638 7.67186 1.32816 7.67186Z" fill="#E1E1E1"/>
+            </svg>              
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-logo">
+        <img src="./assets/img/icons/logo-white.svg" alt="logo">
+      </div>
+
+      <nav class="footer_nav-block">
+        <ul>
+          <li>
+            <a href="/">О клинике</a>
+          </li>
+          <li>
+            <a href="/">Услуги</a>
+          </li>
+          <li>
+            <a href="/">Специалисты</a>
+          </li>
+          <li>
+            <a href="/">Цены</a>
+          </li>
+          <li>
+            <a href="/">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="social-media">
+        <img src="./assets/img/icons/instagram.svg" alt="instagram">
+        <img src="./assets/img/icons/whatsapp.svg" alt="whatsapp">
+        <img src="./assets/img/icons/telegram.svg" alt="telegram">
+      </div>
     </div>
+  </footer>
 
-    <script src="js/script.js"></script>
+  <div class="modal">
+    <div class="modal-body">
+      <div class="close">&times;</div>
+      <form>
+        <input type="text" placeholder="Ваше имя">
+        <textarea cols="30" rows="10" placeholder="Введите соообщение"></textarea>
+        <input type="submit">
+      </form>
+    </div>
+  </div>
+  
+  <script src="./js/script.js"></script>
 </body>
 </html>
